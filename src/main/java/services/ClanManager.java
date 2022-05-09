@@ -51,9 +51,10 @@ public class ClanManager {
             ps.setInt(1, Math.toIntExact(clanId));
             ResultSet resultSet = ps.executeQuery();
             resultSet.next();
-            clan.setId(resultSet.getLong(1));
-            clan.setName(resultSet.getString(2));
-            clan.setGold(resultSet.getInt(3));
+            clan
+                    .setId(resultSet.getLong(1))
+                    .setName(resultSet.getString(2))
+                    .setGold(resultSet.getInt(3));
 
         } catch (SQLException e) {
             //logger

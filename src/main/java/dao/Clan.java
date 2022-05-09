@@ -22,24 +22,27 @@ public class Clan {
         return id;
     }
 
-    public void setId(long id) {
+    public Clan setId(long id) {
         this.id = id;
+        return this;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public Clan setName(String name) {
         this.name = name;
+        return this;
     }
 
     public Integer getGold() {
         return gold;
     }
 
-    public void setGold(int gold) {
+    public Clan setGold(int gold) {
         this.gold = gold;
+        return this;
     }
 
     public void printClan() {
